@@ -1,0 +1,22 @@
+<!-- https://imab.dk -->
+<!-- ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bcc2be156-173a-41e3-ba80-491a866fa59f%7d/RuleData -->
+<!-- This xml carries out the policy to actually block all removable storage devices, but will exclude those defined in the Allow_Specific_Removable_Storage.xml -->
+<PolicyRule Id="{cc2be156-173a-41e3-ba80-491a866fa59f}">
+    <Name>Block Write and Execute Access</Name>
+    <IncludedIdList>
+        <GroupId>{7cb998dc-4e35-4191-a0b8-90444bbb6ce9}</GroupId>
+    </IncludedIdList>
+    <ExcludedIdList>
+		<GroupId>{f29980c8-984b-4b2a-af64-31d12854f7b0}</GroupId>
+	</ExcludedIdList>
+    <Entry Id="{a0bcff88-b8e4-4f48-92be-16c36adac930}">
+        <Type>Deny</Type>
+        <Options>0</Options>
+        <AccessMask>6</AccessMask>
+    </Entry>
+    <Entry Id="{07e22eac-8b01-4778-a567-a8fa6ce18a0c}">
+        <Type>AuditDenied</Type>
+        <Options>3</Options>
+        <AccessMask>6</AccessMask>
+    </Entry>
+</PolicyRule>

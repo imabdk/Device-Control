@@ -1,0 +1,11 @@
+<!-- https://imab.dk -->
+<!-- ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7bf29980c8-984b-4b2a-af64-31d12854f7b0%7d/GroupData -->
+<!-- This xml defines what removable storage devices that we're approving in our environment. Any deviceID not listed here, will have block and execute actions blocked -->
+<Group Id="{f29980c8-984b-4b2a-af64-31d12854f7b0}">
+    <MatchType>MatchAny</MatchType>
+    <DescriptorIdList>
+		<DeviceId>USBSTOR\DISK&amp;VEN_USB&amp;PROD_FLASH_DISK&amp;REV_1100</DeviceId>
+		<DeviceId>USBSTOR\DISK&amp;VEN_GENERAL&amp;PROD_UDISK&amp;REV_5.00</DeviceId>
+		<DeviceId>USBSTOR\DISK&amp;VEN_BARCO&amp;PROD_CLICKSHARE&amp;REV_0328</DeviceId>
+    </DescriptorIdList>
+</Group>

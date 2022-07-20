@@ -1,0 +1,20 @@
+<!-- https://imab.dk -->
+<!-- ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7b594e2506-3070-4eab-98cf-0abc79dbb12a%7d/RuleData -->
+<!-- This xml enables audit logging for the removable storage devices within the Allow_Specific_Removable_Storage.xml -->
+<PolicyRule Id="{594e2506-3070-4eab-98cf-0abc79dbb12a}">
+    <Name>Audit Write and Execute Access</Name>
+    <IncludedIdList>
+        <GroupId>{f29980c8-984b-4b2a-af64-31d12854f7b0}</GroupId>
+    </IncludedIdList>
+    <ExcludedIdList></ExcludedIdList>
+    <Entry Id="{0b0d6083-bd61-4631-93be-df9144cb50fb}">
+        <Type>Allow</Type>
+        <Options>0</Options>
+        <AccessMask>6</AccessMask>
+    </Entry>
+    <Entry Id="{e752e733-b9f9-4015-b838-e56e6da36dd1}">
+        <Type>AuditAllowed</Type>
+        <Options>2</Options>
+        <AccessMask>6</AccessMask>
+    </Entry>
+</PolicyRule>

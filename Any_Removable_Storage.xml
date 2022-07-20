@@ -1,0 +1,9 @@
+<!-- https://imab.dk -->
+<!-- ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b7cb998dc-4e35-4191-a0b8-90444bbb6ce9%7d/GroupData -->
+<!-- This xml defines the scope of the Device Control policy. For this scenario, we're only targeting removable storage device  -->
+<Group Id="{7cb998dc-4e35-4191-a0b8-90444bbb6ce9}">
+    <MatchType>MatchAny</MatchType>
+    <DescriptorIdList>
+        <PrimaryId>RemovableMediaDevices</PrimaryId>
+    </DescriptorIdList>
+</Group>
